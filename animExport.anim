@@ -1,0 +1,523 @@
+animVersion 1.1;
+mayaVersion 2018;
+timeUnit ntsc;
+linearUnit cm;
+angularUnit deg;
+startTime 0;
+endTime 60;
+anim Alpha Alpha explode_glow 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    7 0 auto auto 1 0 0;
+    8 1 auto auto 1 0 0;
+    9 1 auto auto 1 0 0;
+    10 0 auto auto 1 0 0;
+  }
+}
+anim Alpha Alpha distortion_ring_2 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    11 0 auto auto 1 0 0;
+    17 0.05 auto auto 1 0 0;
+    49 0 auto auto 1 0 0;
+  }
+}
+anim scale.scaleX scaleX distortion_ring_2 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    14 1 auto auto 1 0 0;
+    39 1.5 auto auto 1 0 0;
+  }
+}
+anim scale.scaleY scaleY distortion_ring_2 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    14 1 auto auto 1 0 0;
+    30 1 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ distortion_ring_2 0 0 3;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    14 1 auto auto 1 0 0;
+    39 1.5 auto auto 1 0 0;
+  }
+}
+anim Alpha Alpha distortion_ring_1 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    11 0 auto auto 1 0 0;
+    17 0.05 auto auto 1 0 0;
+    49 0 auto auto 1 0 0;
+  }
+}
+anim scale.scaleX scaleX distortion_ring_1 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    14 1 auto auto 1 0 0;
+    33 1.5 auto auto 1 0 0;
+  }
+}
+anim scale.scaleY scaleY distortion_ring_1 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    14 1 auto auto 1 0 0;
+    24 1 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ distortion_ring_1 0 0 3;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    14 1 auto auto 1 0 0;
+    33 1.5 auto auto 1 0 0;
+  }
+}
+anim twobone_distortion_ring 0 2 0;
+anim aux_dropCyl 0 0 0;
+anim scale.scaleY scaleY jt_Explode 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    2 0 auto auto 1 0 0;
+    8 0 fixed fixed 0 0 0 0 1.6666667 72.313704 0.55498585;
+    11 1 fixed fixed 0 0 0 1.7424805 0.21013931 0.2744764 1.9538726;
+  }
+}
+anim scale.scaleX scaleX jt_Explode 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    20 1 auto auto 1 0 0;
+    60 0.85111821 auto auto 1 0 0;
+  }
+}
+anim Alpha Alpha jt_Explode 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    8 0 auto auto 0 0 0;
+    9 1 auto auto 1 0 0;
+    11 1 fixed fixed 0 0 0 -0.43010289 0.3573059 -2.4429131 13.00473;
+    60 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ jt_Explode 0 0 3;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    10 0 auto auto 1 0 0;
+    60 -10.212766 auto auto 1 0 0;
+  }
+}
+anim Alpha Alpha upDistortJt 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    6 0 fixed fixed 1 0 0 47.007085 0.39584503 47.007092 0.39584519;
+    9 0.3 fixed fixed 0 0 0 0 1 -48.773514 0.28480166;
+    12 0 auto auto 1 0 0;
+  }
+}
+anim scale.scaleY scaleY upDistortJt 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    4 1 fixed fixed 1 0 0 88.998375 4.1097146 88.998385 4.1097143;
+    12 5 fixed fixed 1 0 0 -2.5360121 0.66150373 -2.536013 0.66150371;
+    13 4.5 fixed fixed 1 0 0 -40.368868 0.31501482 -40.368858 0.31501493;
+  }
+}
+anim scale.scaleX scaleX upDistortJt 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    7 0.96735408 auto auto 1 0 0;
+    14 2.9673541 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ upDistortJt 0 0 3;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    7 0.96735408 auto auto 1 0 0;
+    14 2.9673541 auto auto 1 0 0;
+  }
+}
+anim scale.scaleX scaleX distort_jnt 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.1 auto auto 1 0 0;
+    5 1 auto auto 1 0 0;
+    10 6 auto auto 1 0 0;
+  }
+}
+anim scale.scaleY scaleY distort_jnt 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.1 auto auto 1 0 0;
+    5 0.6 auto auto 1 0 0;
+    10 1.3 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ distort_jnt 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.1 auto auto 1 0 0;
+    5 1 auto auto 1 0 0;
+    10 6 auto auto 1 0 0;
+  }
+}
+anim Alpha Alpha distort_jnt 0 0 3;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0 auto auto 1 0 0;
+    5 0.30000001 auto auto 1 0 0;
+    12 0 auto auto 1 0 0;
+  }
+}
+anim scale.scaleX scaleX blastsphere_jnt 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.1 auto auto 1 0 0;
+    3 -0.013099042 fixed fixed 0 0 0 0 1 34.680722 1;
+    12 1.1983213 fixed fixed 1 0 0 -6.7822477 1 -6.7822475 1;
+  }
+}
+anim scale.scaleY scaleY blastsphere_jnt 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.1 auto auto 1 0 0;
+    3 0.0052715655 fixed fixed 0 0 0 0 1 23.993289 1;
+    12 1 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ blastsphere_jnt 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.1 auto auto 1 0 0;
+    3 -0.013099042 fixed fixed 0 0 0 0 1 34.680722 1;
+    12 1.1983213 fixed fixed 1 0 0 -6.7822477 1 -6.7822475 1;
+  }
+}
+anim Alpha Alpha blastsphere_jnt 0 0 3;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0 linear linear 1 0 0;
+    1 0.498 fixed fixed 0 0 0 31.195022 0.52853655 1.9508231 2.8111046;
+    10 0.60871399 fixed fixed 0 0 0 2.6461088 6.3400935 -4.050848 2.5790319;
+    16 0.0013127123 fixed fixed 1 0 0 -10.2743 2.0325923 -10.274295 1.8380521;
+  }
+}
+anim up 0 0 0;
+anim circle_out_03 0 0 0;
+anim circle_out_02 0 0 0;
+anim scale.scaleX scaleX circle_out_01 0 2 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    11.25 0.80000001 auto auto 1 0 0;
+    16.25 1 auto auto 1 0 0;
+  }
+}
+anim scale.scaleZ scaleZ circle_out_01 0 2 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    11.25 0.80000001 auto auto 1 0 0;
+    16.25 1 auto auto 1 0 0;
+  }
+}
+anim up 0 0 0;
+anim circle_03 0 0 0;
+anim circle_02 0 0 0;
+anim circle_01 0 3 0;
+anim Alpha Alpha ring_expand_multi1 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    12 1 linear linear 1 0 0;
+    15 0 linear linear 1 0 0;
+  }
+}
+anim scale.scaleX scaleX ring_expand_multi1 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    6 0.095124892 fixed fixed 1 0 0 1.2641368 1 12.152205 1;
+    14 0.5 fixed fixed 1 0 0 0.34994969 1 0.34995402 1;
+  }
+}
+anim scale.scaleZ scaleZ ring_expand_multi1 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    6 0.095124892 fixed fixed 1 0 0 1.2641368 1 12.152205 1;
+    14 0.5 fixed fixed 1 0 0 0.34994969 1 0.34995402 1;
+  }
+}
+anim Alpha Alpha ring_expand_multi 0 1 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0 auto auto 1 0 0;
+    5 1 auto auto 1 0 0;
+    8 1 linear linear 1 0 0;
+    15 0 linear linear 1 0 0;
+  }
+}
+anim scale.scaleX scaleX ring_expand_multi 0 1 1;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.34561402 linear linear 1 0 0;
+    8 0.1 fixed fixed 0 0 0 0 2 61.492931 0.9264231;
+    16 1.2880747 fixed fixed 0 0 0 -4.5938893 3.6960515 -20.12679 0.96473179;
+  }
+}
+anim scale.scaleZ scaleZ ring_expand_multi 0 1 2;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.34561402 linear linear 1 0 0;
+    8 0.1 fixed fixed 0 0 0 0 2 61.492931 0.9264231;
+    16 1.2880747 fixed fixed 0 0 0 -4.5938893 3.6960515 -20.12679 0.96473179;
+  }
+}
+anim Alpha Alpha ring_expand_base_test1 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    9 1 linear linear 1 0 0;
+    10 0.45 linear linear 1 0 0;
+  }
+}
+anim scale.scaleX scaleX ring_expand_base_test1 0 0 1;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    6 0.037876575 fixed fixed 1 0 0 1.2641368 1 12.152205 1;
+    22 0.74941494 fixed fixed 1 0 0 -1.6110308 1 -1.6110263 1;
+  }
+}
+anim scale.scaleZ scaleZ ring_expand_base_test1 0 0 2;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    6 0.037876575 fixed fixed 1 0 0 1.2641368 1 12.152205 1;
+    22 0.74941494 fixed fixed 1 0 0 -1.6110308 1 -1.6110263 1;
+  }
+}
+anim Alpha Alpha ring_expand_base_test 0 1 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0 auto auto 1 0 0;
+    5 1 auto auto 1 0 0;
+    8 1 linear linear 1 0 0;
+    10 0.45 linear linear 1 0 0;
+  }
+}
+anim scale.scaleX scaleX ring_expand_base_test 0 1 1;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.34561402 linear linear 1 0 0;
+    8 0.1 fixed fixed 0 0 0 0 2 41.44937 2.6682998;
+    16 1.3 fixed fixed 0 0 0 90 0.038736793 -0.21080834 1.1114795;
+  }
+}
+anim scale.scaleZ scaleZ ring_expand_base_test 0 1 2;
+animData {
+  input time;
+  output unitless;
+  weighted 1;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    0 0.34561402 linear linear 1 0 0;
+    8 0.1 fixed fixed 0 0 0 0 2 41.44937 2.6682998;
+    16 1.3 fixed fixed 0 0 0 90 0.038736793 -0.21080834 1.1114795;
+  }
+}
+anim Alpha Alpha glow_jt 0 0 0;
+animData {
+  input time;
+  output unitless;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    3 0 auto auto 1 0 0;
+    4 1 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+  }
+}
